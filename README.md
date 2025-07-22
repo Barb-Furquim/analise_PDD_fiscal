@@ -52,5 +52,5 @@ Este projeto em Python automatiza o processamento de dados financeiros de CCBs (
    pip install pandas
    ```
    ```bash
-   pip installopenpyxl
+   pip install openpyxl
    ```
