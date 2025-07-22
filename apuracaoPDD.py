@@ -1,7 +1,7 @@
 import pandas as pd
 from datetime import datetime
 
-filePath = "C:\\Users\\barbara_furquim\\Downloads\\nova.xlsx"
+filePath = "C:\\Users\\barbara_furquim\\Downloads\\PDD_Fiscal_2025.xlsx"
 # Carregar os dados das planilhas
 historico_df = pd.read_excel(filePath, sheet_name="Historico_CCBs_Anteriores", engine="openpyxl")
 junho_df = pd.read_excel(filePath, sheet_name="Saldos_Negativos_Junho_2025", engine="openpyxl")
@@ -61,7 +61,7 @@ resumo_df = pd.DataFrame({
     "Valor": [total_ccbs_ativas, total_dedutivel, total_nao_dedutivel]
 })
 
-newFilePath = "C:\\Users\\barbara_furquim\\Downloads\\nova_atualizada.xlsx"
+newFilePath = "C:\\Users\\barbara_furquim\\Downloads\\simulacao_PDD_Fiscal_2025.xlsx"
 # Salvar em novo arquivo Excel
 with pd.ExcelWriter(newFilePath, engine="openpyxl") as writer:
     historico_df.to_excel(writer, sheet_name="Historico_CCBs_Anteriores", index=False)
@@ -69,4 +69,4 @@ with pd.ExcelWriter(newFilePath, engine="openpyxl") as writer:
     saldos_atualizados.to_excel(writer, sheet_name="saldos_atualizados", index=False)
     resumo_df.to_excel(writer, sheet_name="resumo", index=False)
 
-print("Arquivo 'nova_atualizada.xlsx' criado com sucesso.")
+print("Arquivo 'simulacao_PDD_Fiscal_2025.xlsx' criado com sucesso.")
