@@ -9,7 +9,7 @@ Este projeto em Python automatiza o processamento de dados financeiros de CCBs (
   - `Saldos_Negativos_Junho_2025`: Saldos negativos atualizados por cliente em junho/2025.
 - `simulacao_PDD_Fiscal_2025.xlsx`: Arquivo gerado com:
   - `saldos_atualizados`: Dados atualizados com dedutibilidade fiscal.
-  - `resumo`: Indicadores consolidados.
+  - `resumo_apuracao`: Indicadores consolidados.
 
 ## ⚙️ Funcionalidades do Script
 
